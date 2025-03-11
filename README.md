@@ -4,7 +4,7 @@ This repository contains the source code and datasets used to implement the Deng
 
 ## Overview
 
-This repository contains the workflow for generating datasets from the representative trees produced in the Dengue Virus Lineage Systems project, as described by [Hill et al., 2024](https://doi.org/10.1101/2024.05.16.24307504). These datasets are designed for integration into the NextClade tool, facilitating the implementation and analysis of dengue virus lineages.
+This repository contains the workflow for generating datasets from the representative trees produced in the Dengue Virus Lineage Systems project, as described by [Hill et al., 2024](https://doi.org/10.1371/journal.pbio.3002834). These datasets are designed for integration into the NextClade tool, facilitating the implementation and analysis of dengue virus lineages.
 
 ## Repository Contents
 
