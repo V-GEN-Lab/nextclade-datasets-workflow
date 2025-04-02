@@ -1,0 +1,241 @@
+Building DAG of jobs...
+shared_storage_local_copies: True
+remote_exec: False
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+assemble_dataset        4
+augur_ancestral         4
+augur_clades            4
+augur_export            4
+augur_translate         4
+colors                  1
+total                  22
+
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807, '_job_count': 9223372036854775807}
+Ready jobs (5)
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+Selected jobs (4)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775807}
+Execute 4 jobs...
+
+[Wed Apr  2 15:00:38 2025]
+localrule colors:
+    input: resources/color_ordering.tsv, resources/color_schemes.tsv, resources/metadata.tsv
+    output: results/denv1/colors.tsv
+    jobid: 3
+    reason: Missing output files: results/denv1/colors.tsv
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:00:38 2025]
+localrule augur_ancestral:
+    input: resources/denv2/tree.nwk, resources/denv2/aligned.fasta, resources/denv2/reference.fasta
+    output: results/denv2/nt_muts.json
+    jobid: 11
+    reason: Missing output files: results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:00:38 2025]
+localrule augur_ancestral:
+    input: resources/denv1/tree.nwk, resources/denv1/aligned.fasta, resources/denv1/reference.fasta
+    output: results/denv1/nt_muts.json
+    jobid: 5
+    reason: Missing output files: results/denv1/nt_muts.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:00:38 2025]
+localrule augur_ancestral:
+    input: resources/denv3/tree.nwk, resources/denv3/aligned.fasta, resources/denv3/reference.fasta
+    output: results/denv3/nt_muts.json
+    jobid: 17
+    reason: Missing output files: results/denv3/nt_muts.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv1/tree.nwk             --alignment resources/denv1/aligned.fasta             --root-sequence resources/denv1/reference.fasta             --output-node-data results/denv1/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv1/tree.nwk             --alignment resources/denv1/aligned.fasta             --root-sequence resources/denv1/reference.fasta             --output-node-data results/denv1/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 261, in _callback
+    raise ex
+  File "/home/james/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 247, in cached_or_run
+    run_func(*args)
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 459, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv1/tree.nwk             --alignment resources/denv1/aligned.fasta             --root-sequence resources/denv1/reference.fasta             --output-node-data results/denv1/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv3/tree.nwk             --alignment resources/denv3/aligned.fasta             --root-sequence resources/denv3/reference.fasta             --output-node-data results/denv3/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+RuleException:
+CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv1/tree.nwk             --alignment resources/denv1/aligned.fasta             --root-sequence resources/denv1/reference.fasta             --output-node-data results/denv1/nt_muts.json             --inference joint' returned non-zero exit status 127.
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 261, in _callback
+    raise ex
+  File "/home/james/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 247, in cached_or_run
+    run_func(*args)
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 459, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+[Wed Apr  2 15:00:38 2025]
+Error in rule augur_ancestral:
+    jobid: 5
+    input: resources/denv1/tree.nwk, resources/denv1/aligned.fasta, resources/denv1/reference.fasta
+    output: results/denv1/nt_muts.json
+    shell:
+        
+        augur ancestral             --tree resources/denv1/tree.nwk             --alignment resources/denv1/aligned.fasta             --root-sequence resources/denv1/reference.fasta             --output-node-data results/denv1/nt_muts.json             --inference joint
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 423, in run_wrapper
+    run(
+  File "/home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile", line 69, in __rule_augur_ancestral
+    aa_muts="results/{build_name}/aa_muts.json",
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/shell.py", line 357, in __new__
+    raise sp.CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv3/tree.nwk             --alignment resources/denv3/aligned.fasta             --root-sequence resources/denv3/reference.fasta             --output-node-data results/denv3/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 261, in _callback
+    raise ex
+  File "/home/james/miniconda3/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 247, in cached_or_run
+    run_func(*args)
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/executors/local.py", line 459, in run_wrapper
+    raise RuleException(
+snakemake.exceptions.RuleException: CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv3/tree.nwk             --alignment resources/denv3/aligned.fasta             --root-sequence resources/denv3/reference.fasta             --output-node-data results/denv3/nt_muts.json             --inference joint' returned non-zero exit status 127.
+
+RuleException:
+CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint' returned non-zero exit status 127.
+[Wed Apr  2 15:00:38 2025]
+Error in rule augur_ancestral:
+    jobid: 11
+    input: resources/denv2/tree.nwk, resources/denv2/aligned.fasta, resources/denv2/reference.fasta
+    output: results/denv2/nt_muts.json
+    shell:
+        
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+RuleException:
+CalledProcessError in file /home/james/Documentos/GitHub/dengue-lineages-workflow/Snakefile, line 38:
+Command 'set -euo pipefail;  
+        augur ancestral             --tree resources/denv3/tree.nwk             --alignment resources/denv3/aligned.fasta             --root-sequence resources/denv3/reference.fasta             --output-node-data results/denv3/nt_muts.json             --inference joint' returned non-zero exit status 127.
+[Wed Apr  2 15:00:38 2025]
+Error in rule augur_ancestral:
+    jobid: 17
+    input: resources/denv3/tree.nwk, resources/denv3/aligned.fasta, resources/denv3/reference.fasta
+    output: results/denv3/nt_muts.json
+    shell:
+        
+        augur ancestral             --tree resources/denv3/tree.nwk             --alignment resources/denv3/aligned.fasta             --root-sequence resources/denv3/reference.fasta             --output-node-data results/denv3/nt_muts.json             --inference joint
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Completion of job ['colors'] reported to scheduler.
+jobs registered as running before removal {colors}
+[Wed Apr  2 15:00:38 2025]
+Finished job 3.
+1 of 22 steps (5%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-04-02T150037.769542.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks
+Full Traceback (most recent call last):
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/cli.py", line 2116, in args_to_api
+    dag_api.execute_workflow(
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/api.py", line 594, in execute_workflow
+    workflow.execute(
+  File "/home/james/miniconda3/lib/python3.11/site-packages/snakemake/workflow.py", line 1299, in execute
+    raise WorkflowError("At least one job did not complete successfully.")
+snakemake_interface_common.exceptions.WorkflowError: At least one job did not complete successfully.
+
+WorkflowError:
+At least one job did not complete successfully.

@@ -1,0 +1,460 @@
+Building DAG of jobs...
+shared_storage_local_copies: True
+remote_exec: False
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+assemble_dataset        4
+augur_ancestral         4
+augur_clades            4
+augur_export            4
+augur_translate         4
+total                  21
+
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807, '_job_count': 9223372036854775807}
+Ready jobs (4)
+Select jobs to execute...
+Selected jobs (4)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775807}
+Execute 4 jobs...
+
+[Wed Apr  2 15:02:10 2025]
+localrule augur_ancestral:
+    input: resources/denv4/tree.nwk, resources/denv4/aligned.fasta, resources/denv4/reference.fasta
+    output: results/denv4/nt_muts.json
+    jobid: 23
+    reason: Missing output files: results/denv4/nt_muts.json
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:02:10 2025]
+localrule augur_ancestral:
+    input: resources/denv2/tree.nwk, resources/denv2/aligned.fasta, resources/denv2/reference.fasta
+    output: results/denv2/nt_muts.json
+    jobid: 11
+    reason: Missing output files: results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:02:10 2025]
+localrule augur_ancestral:
+    input: resources/denv3/tree.nwk, resources/denv3/aligned.fasta, resources/denv3/reference.fasta
+    output: results/denv3/nt_muts.json
+    jobid: 17
+    reason: Missing output files: results/denv3/nt_muts.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 15:02:10 2025]
+localrule augur_ancestral:
+    input: resources/denv1/tree.nwk, resources/denv1/aligned.fasta, resources/denv1/reference.fasta
+    output: results/denv1/nt_muts.json
+    jobid: 5
+    reason: Missing output files: results/denv1/nt_muts.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_ancestral'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_ancestral, augur_ancestral, augur_ancestral}
+[Wed Apr  2 15:02:13 2025]
+Finished job 23.
+1 of 21 steps (5%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775808}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775808}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:13 2025]
+localrule augur_translate:
+    input: resources/denv4/tree.nwk, resources/denv4/reference.gb, results/denv4/nt_muts.json
+    output: results/denv4/aa_muts.json
+    jobid: 24
+    reason: Missing output files: results/denv4/aa_muts.json; Input files updated by another job: results/denv4/nt_muts.json
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_ancestral'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_ancestral, augur_translate, augur_ancestral}
+[Wed Apr  2 15:02:14 2025]
+Finished job 17.
+2 of 21 steps (10%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775809}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775809}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:14 2025]
+localrule augur_translate:
+    input: resources/denv3/tree.nwk, resources/denv3/reference.gb, results/denv3/nt_muts.json
+    output: results/denv3/aa_muts.json
+    jobid: 18
+    reason: Missing output files: results/denv3/aa_muts.json; Input files updated by another job: results/denv3/nt_muts.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_translate'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_translate, augur_ancestral, augur_translate}
+[Wed Apr  2 15:02:14 2025]
+Finished job 24.
+3 of 21 steps (14%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775810}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775810}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:14 2025]
+localrule augur_clades:
+    input: resources/denv4/tree.nwk, results/denv4/nt_muts.json, results/denv4/aa_muts.json, resources/denv4/clades.tsv
+    output: results/denv4/clades.json
+    jobid: 22
+    reason: Missing output files: results/denv4/clades.json; Input files updated by another job: results/denv4/nt_muts.json, results/denv4/aa_muts.json
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_clades'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_clades, augur_translate, augur_ancestral}
+[Wed Apr  2 15:02:15 2025]
+Finished job 22.
+4 of 21 steps (19%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775811}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775811}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:15 2025]
+localrule augur_export:
+    input: results/denv4/colors.tsv, resources/denv4/tree.nwk, resources/metadata.tsv, results/denv4/clades.json, results/denv4/nt_muts.json, results/denv4/aa_muts.json, resources/denv4/auspice_config.json
+    output: auspice/tree_denv4.json
+    jobid: 20
+    reason: Missing output files: auspice/tree_denv4.json; Input files updated by another job: results/denv4/aa_muts.json, results/denv4/nt_muts.json, results/denv4/clades.json
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_translate'] reported to scheduler.
+jobs registered as running before removal {augur_export, augur_ancestral, augur_translate, augur_ancestral}
+[Wed Apr  2 15:02:15 2025]
+Finished job 18.
+5 of 21 steps (24%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775812}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775812}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:15 2025]
+localrule augur_clades:
+    input: resources/denv3/tree.nwk, results/denv3/nt_muts.json, results/denv3/aa_muts.json, resources/denv3/clades.tsv
+    output: results/denv3/clades.json
+    jobid: 16
+    reason: Missing output files: results/denv3/clades.json; Input files updated by another job: results/denv3/nt_muts.json, results/denv3/aa_muts.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_export'] reported to scheduler.
+jobs registered as running before removal {augur_export, augur_clades, augur_ancestral, augur_ancestral}
+[Wed Apr  2 15:02:16 2025]
+Finished job 20.
+6 of 21 steps (29%) done
+Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775813}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775803, '_job_count': 9223372036854775813}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:16 2025]
+localrule assemble_dataset:
+    input: resources/denv4/reference.fasta, auspice/tree_denv4.json, resources/denv4/pathogen.json, resources/denv4/sequences.fasta, resources/denv4/genome_annotation.gff3, resources/denv4/README.md, resources/denv4/CHANGELOG.md
+    output: datasets/denv4/reference.fasta, datasets/denv4/tree.json, datasets/denv4/pathogen.json, datasets/denv4/sequences.fasta, datasets/denv4/genome_annotation.gff3, datasets/denv4/README.md, datasets/denv4/CHANGELOG.md
+    jobid: 19
+    reason: Missing output files: datasets/denv4/genome_annotation.gff3, datasets/denv4/CHANGELOG.md, datasets/denv4/README.md, datasets/denv4/pathogen.json, datasets/denv4/sequences.fasta; Input files updated by another job: auspice/tree_denv4.json
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+Completion of job ['assemble_dataset'] reported to scheduler.
+jobs registered as running before removal {augur_clades, augur_ancestral, augur_ancestral, assemble_dataset}
+[Wed Apr  2 15:02:16 2025]
+Finished job 19.
+7 of 21 steps (33%) done
+Completion of job ['augur_clades'] reported to scheduler.
+jobs registered as running before removal {augur_clades, augur_ancestral, augur_ancestral}
+[Wed Apr  2 15:02:16 2025]
+Finished job 16.
+8 of 21 steps (38%) done
+Resources before job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775815}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775815}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:16 2025]
+localrule augur_export:
+    input: results/denv3/colors.tsv, resources/denv3/tree.nwk, resources/metadata.tsv, results/denv3/clades.json, results/denv3/nt_muts.json, results/denv3/aa_muts.json, resources/denv3/auspice_config.json
+    output: auspice/tree_denv3.json
+    jobid: 14
+    reason: Missing output files: auspice/tree_denv3.json; Input files updated by another job: results/denv3/nt_muts.json, results/denv3/clades.json, results/denv3/aa_muts.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_export'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_ancestral, augur_export}
+[Wed Apr  2 15:02:17 2025]
+Finished job 14.
+9 of 21 steps (43%) done
+Resources before job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775816}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 1, '_nodes': 9223372036854775804, '_job_count': 9223372036854775816}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:17 2025]
+localrule assemble_dataset:
+    input: resources/denv3/reference.fasta, auspice/tree_denv3.json, resources/denv3/pathogen.json, resources/denv3/sequences.fasta, resources/denv3/genome_annotation.gff3, resources/denv3/README.md, resources/denv3/CHANGELOG.md
+    output: datasets/denv3/reference.fasta, datasets/denv3/tree.json, datasets/denv3/pathogen.json, datasets/denv3/sequences.fasta, datasets/denv3/genome_annotation.gff3, datasets/denv3/README.md, datasets/denv3/CHANGELOG.md
+    jobid: 13
+    reason: Missing output files: datasets/denv3/sequences.fasta, datasets/denv3/pathogen.json, datasets/denv3/README.md, datasets/denv3/genome_annotation.gff3, datasets/denv3/CHANGELOG.md; Input files updated by another job: auspice/tree_denv3.json
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+Completion of job ['assemble_dataset'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, assemble_dataset, augur_ancestral}
+[Wed Apr  2 15:02:17 2025]
+Finished job 13.
+10 of 21 steps (48%) done
+Completion of job ['augur_ancestral'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_ancestral}
+[Wed Apr  2 15:02:17 2025]
+Finished job 5.
+11 of 21 steps (52%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775818}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775818}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:17 2025]
+localrule augur_translate:
+    input: resources/denv1/tree.nwk, resources/denv1/reference.gb, results/denv1/nt_muts.json
+    output: results/denv1/aa_muts.json
+    jobid: 6
+    reason: Missing output files: results/denv1/aa_muts.json; Input files updated by another job: results/denv1/nt_muts.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_ancestral'] reported to scheduler.
+jobs registered as running before removal {augur_ancestral, augur_translate}
+[Wed Apr  2 15:02:18 2025]
+Finished job 11.
+12 of 21 steps (57%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775819}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775819}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:18 2025]
+localrule augur_translate:
+    input: resources/denv2/tree.nwk, resources/denv2/reference.gb, results/denv2/nt_muts.json
+    output: results/denv2/aa_muts.json
+    jobid: 12
+    reason: Missing output files: results/denv2/aa_muts.json; Input files updated by another job: results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_translate'] reported to scheduler.
+jobs registered as running before removal {augur_translate, augur_translate}
+[Wed Apr  2 15:02:19 2025]
+Finished job 6.
+13 of 21 steps (62%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775820}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775820}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:19 2025]
+localrule augur_clades:
+    input: resources/denv1/tree.nwk, results/denv1/nt_muts.json, results/denv1/aa_muts.json, resources/denv1/clades.tsv
+    output: results/denv1/clades.json
+    jobid: 4
+    reason: Missing output files: results/denv1/clades.json; Input files updated by another job: results/denv1/nt_muts.json, results/denv1/aa_muts.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_clades'] reported to scheduler.
+jobs registered as running before removal {augur_translate, augur_clades}
+[Wed Apr  2 15:02:20 2025]
+Finished job 4.
+14 of 21 steps (67%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775821}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775821}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:20 2025]
+localrule augur_export:
+    input: results/denv1/colors.tsv, resources/denv1/tree.nwk, resources/metadata.tsv, results/denv1/clades.json, results/denv1/nt_muts.json, results/denv1/aa_muts.json, resources/denv1/auspice_config.json
+    output: auspice/tree_denv1.json
+    jobid: 2
+    reason: Missing output files: auspice/tree_denv1.json; Input files updated by another job: results/denv1/clades.json, results/denv1/nt_muts.json, results/denv1/aa_muts.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_translate'] reported to scheduler.
+jobs registered as running before removal {augur_export, augur_translate}
+[Wed Apr  2 15:02:20 2025]
+Finished job 12.
+15 of 21 steps (71%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775822}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775822}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:20 2025]
+localrule augur_clades:
+    input: resources/denv2/tree.nwk, results/denv2/nt_muts.json, results/denv2/aa_muts.json, resources/denv2/clades.tsv
+    output: results/denv2/clades.json
+    jobid: 10
+    reason: Missing output files: results/denv2/clades.json; Input files updated by another job: results/denv2/aa_muts.json, results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_export'] reported to scheduler.
+jobs registered as running before removal {augur_export, augur_clades}
+[Wed Apr  2 15:02:21 2025]
+Finished job 2.
+16 of 21 steps (76%) done
+Resources before job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775823}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 2, '_nodes': 9223372036854775805, '_job_count': 9223372036854775823}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:21 2025]
+localrule assemble_dataset:
+    input: resources/denv1/reference.fasta, auspice/tree_denv1.json, resources/denv1/pathogen.json, resources/denv1/sequences.fasta, resources/denv1/genome_annotation.gff3, resources/denv1/README.md, resources/denv1/CHANGELOG.md
+    output: datasets/denv1/reference.fasta, datasets/denv1/tree.json, datasets/denv1/pathogen.json, datasets/denv1/sequences.fasta, datasets/denv1/genome_annotation.gff3, datasets/denv1/README.md, datasets/denv1/CHANGELOG.md
+    jobid: 1
+    reason: Missing output files: datasets/denv1/pathogen.json, datasets/denv1/CHANGELOG.md, datasets/denv1/genome_annotation.gff3, datasets/denv1/README.md, datasets/denv1/sequences.fasta; Input files updated by another job: auspice/tree_denv1.json
+    wildcards: build_name=denv1
+    resources: tmpdir=/tmp
+
+Completion of job ['assemble_dataset'] reported to scheduler.
+jobs registered as running before removal {assemble_dataset, augur_clades}
+[Wed Apr  2 15:02:21 2025]
+Finished job 1.
+17 of 21 steps (81%) done
+Completion of job ['augur_clades'] reported to scheduler.
+jobs registered as running before removal {augur_clades}
+[Wed Apr  2 15:02:21 2025]
+Finished job 10.
+18 of 21 steps (86%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807, '_job_count': 9223372036854775825}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775825}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:21 2025]
+localrule augur_export:
+    input: results/denv2/colors.tsv, resources/denv2/tree.nwk, resources/metadata.tsv, results/denv2/clades.json, results/denv2/nt_muts.json, results/denv2/aa_muts.json, resources/denv2/auspice_config.json
+    output: auspice/tree_denv2.json
+    jobid: 8
+    reason: Missing output files: auspice/tree_denv2.json; Input files updated by another job: results/denv2/clades.json, results/denv2/aa_muts.json, results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+Completion of job ['augur_export'] reported to scheduler.
+jobs registered as running before removal {augur_export}
+[Wed Apr  2 15:02:22 2025]
+Finished job 8.
+19 of 21 steps (90%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807, '_job_count': 9223372036854775826}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775826}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:22 2025]
+localrule assemble_dataset:
+    input: resources/denv2/reference.fasta, auspice/tree_denv2.json, resources/denv2/pathogen.json, resources/denv2/sequences.fasta, resources/denv2/genome_annotation.gff3, resources/denv2/README.md, resources/denv2/CHANGELOG.md
+    output: datasets/denv2/reference.fasta, datasets/denv2/tree.json, datasets/denv2/pathogen.json, datasets/denv2/sequences.fasta, datasets/denv2/genome_annotation.gff3, datasets/denv2/README.md, datasets/denv2/CHANGELOG.md
+    jobid: 7
+    reason: Missing output files: datasets/denv2/sequences.fasta, datasets/denv2/genome_annotation.gff3, datasets/denv2/README.md, datasets/denv2/CHANGELOG.md, datasets/denv2/pathogen.json; Input files updated by another job: auspice/tree_denv2.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+Completion of job ['assemble_dataset'] reported to scheduler.
+jobs registered as running before removal {assemble_dataset}
+[Wed Apr  2 15:02:22 2025]
+Finished job 7.
+20 of 21 steps (95%) done
+Resources before job selection: {'_cores': 4, '_nodes': 9223372036854775807, '_job_count': 9223372036854775827}
+Ready jobs (1)
+Select jobs to execute...
+Using greedy selector because only single job has to be scheduled.
+Selected jobs (1)
+Resources after job selection: {'_cores': 3, '_nodes': 9223372036854775806, '_job_count': 9223372036854775827}
+Execute 1 jobs...
+
+[Wed Apr  2 15:02:22 2025]
+localrule all:
+    input: datasets/denv1/pathogen.json, datasets/denv1/sequences.fasta, datasets/denv1/genome_annotation.gff3, datasets/denv1/README.md, datasets/denv1/CHANGELOG.md, datasets/denv2/pathogen.json, datasets/denv2/sequences.fasta, datasets/denv2/genome_annotation.gff3, datasets/denv2/README.md, datasets/denv2/CHANGELOG.md, datasets/denv3/pathogen.json, datasets/denv3/sequences.fasta, datasets/denv3/genome_annotation.gff3, datasets/denv3/README.md, datasets/denv3/CHANGELOG.md, datasets/denv4/pathogen.json, datasets/denv4/sequences.fasta, datasets/denv4/genome_annotation.gff3, datasets/denv4/README.md, datasets/denv4/CHANGELOG.md
+    jobid: 0
+    reason: Input files updated by another job: datasets/denv1/pathogen.json, datasets/denv2/sequences.fasta, datasets/denv3/sequences.fasta, datasets/denv4/CHANGELOG.md, datasets/denv1/CHANGELOG.md, datasets/denv2/README.md, datasets/denv4/sequences.fasta, datasets/denv3/pathogen.json, datasets/denv3/README.md, datasets/denv4/README.md, datasets/denv1/genome_annotation.gff3, datasets/denv2/genome_annotation.gff3, datasets/denv4/pathogen.json, datasets/denv3/CHANGELOG.md, datasets/denv1/README.md, datasets/denv2/CHANGELOG.md, datasets/denv1/sequences.fasta, datasets/denv3/genome_annotation.gff3, datasets/denv2/pathogen.json, datasets/denv4/genome_annotation.gff3
+    resources: tmpdir=/tmp
+
+Completion of job ['all'] reported to scheduler.
+jobs registered as running before removal {all}
+[Wed Apr  2 15:02:22 2025]
+Finished job 0.
+21 of 21 steps (100%) done
+Complete log: .snakemake/log/2025-04-02T150210.464880.snakemake.log
+unlocking
+removing lock
+removing lock
+removed all locks

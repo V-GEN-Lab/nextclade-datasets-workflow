@@ -1,0 +1,84 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+assemble_dataset        4
+augur_ancestral         4
+augur_clades            4
+augur_export            4
+augur_translate         4
+colors                  4
+total                  25
+
+Select jobs to execute...
+Failed to solve scheduling problem with ILP solver. Falling back to greedy solver. Run Snakemake with --verbose to see the full solver output for debugging the problem.
+Execute 4 jobs...
+
+[Wed Apr  2 14:57:02 2025]
+localrule colors:
+    input: resources/color_ordering.tsv, resources/color_schemes.tsv, resources/metadata.tsv
+    output: results/denv3/colors.tsv
+    jobid: 15
+    reason: Missing output files: results/denv3/colors.tsv
+    wildcards: build_name=denv3
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 14:57:02 2025]
+localrule augur_ancestral:
+    input: resources/denv2/tree.nwk, resources/denv2/aligned.fasta, resources/denv2/reference.fasta
+    output: results/denv2/nt_muts.json
+    jobid: 11
+    reason: Missing output files: results/denv2/nt_muts.json
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 14:57:02 2025]
+localrule colors:
+    input: resources/color_ordering.tsv, resources/color_schemes.tsv, resources/metadata.tsv
+    output: results/denv2/colors.tsv
+    jobid: 9
+    reason: Missing output files: results/denv2/colors.tsv
+    wildcards: build_name=denv2
+    resources: tmpdir=/tmp
+
+
+[Wed Apr  2 14:57:02 2025]
+localrule colors:
+    input: resources/color_ordering.tsv, resources/color_schemes.tsv, resources/metadata.tsv
+    output: results/denv4/colors.tsv
+    jobid: 21
+    reason: Missing output files: results/denv4/colors.tsv
+    wildcards: build_name=denv4
+    resources: tmpdir=/tmp
+
+[Wed Apr  2 14:57:02 2025]
+Error in rule augur_ancestral:
+    jobid: 11
+    input: resources/denv2/tree.nwk, resources/denv2/aligned.fasta, resources/denv2/reference.fasta
+    output: results/denv2/nt_muts.json
+    shell:
+        
+        augur ancestral             --tree resources/denv2/tree.nwk             --alignment resources/denv2/aligned.fasta             --root-sequence resources/denv2/reference.fasta             --output-node-data results/denv2/nt_muts.json             --inference joint
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Apr  2 14:57:03 2025]
+Finished job 9.
+1 of 25 steps (4%) done
+[Wed Apr  2 14:57:03 2025]
+Finished job 21.
+2 of 25 steps (8%) done
+[Wed Apr  2 14:57:03 2025]
+Finished job 15.
+3 of 25 steps (12%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-04-02T145702.319120.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
