@@ -6,7 +6,7 @@
   ],
   "data_provenance": [
     {
-      "name": "NCBI and GISAID"
+      "name": "NCBI"
     }
   ],
   "build_url": "https://github.com/V-GEN-Lab/dengue-lineages-nextclade",

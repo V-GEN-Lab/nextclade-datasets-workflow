@@ -101,6 +101,7 @@ rule augur_export:
     input:
         colors="results/{build_name}/colors.tsv",
         tree="resources/{build_name}/tree.nwk",
+        branch="resources/{build_name}/branch-lengths.json",
         metadata="resources/metadata.tsv",
         clades="results/{build_name}/clades.json",
         nt_muts="results/{build_name}/nt_muts.json",
@@ -113,7 +114,7 @@ rule augur_export:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.nt_muts} {input.clades} \
+            --node-data {input.nt_muts} {input.clades} {input.aa_muts} {input.branch} \
             --colors {input.colors} \
             --auspice-config {input.auspice_config} \
             --include-root-sequence \
