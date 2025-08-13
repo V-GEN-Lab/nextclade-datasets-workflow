@@ -76,8 +76,6 @@ rule augur_clades:
             --tree {input.tree} \
             --mutations {input.nuc_muts} {input.aa_muts} \
             --clades {input.clades} \
-            --membership-name clade_membership \
-            --label-name lineage \
             --output-node-data {output.node_data} 2>&1 | tee {log}
         """
 rule colors:

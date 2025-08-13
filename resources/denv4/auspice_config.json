@@ -1,8 +1,14 @@
 {
   "title": "Dengue Lineages of DENV-4",
   "maintainers": [
-    {"name": "James Siqueira", "url": ""},
-    {"name": "Alex Ranieri", "url": ""}
+    {
+      "name": "James Siqueira",
+      "url": ""
+    },
+    {
+      "name": "Alex Ranieri",
+      "url": ""
+    }
   ],
   "data_provenance": [
     {
@@ -14,16 +20,6 @@
     {
       "key": "serotype",
       "title": "Serotype",
-      "type": "categorical"
-    },
-    {
-      "key": "clade_membership",
-      "title": "Lineage",
-      "type": "categorical"
-    },
-    {
-      "key": "lineage_membership",
-      "title": "Lineage",
       "type": "categorical"
     },
     {
@@ -54,12 +50,11 @@
     "location"
   ],
   "display_defaults": {
-  "map_triplicate": true,
+    "map_triplicate": true,
     "color_by": "country"
   },
   "filters": [
     "clade_membership",
-    "lineage_membership",
     "country",
     "division"
   ],
@@ -70,4 +65,3 @@
     "frequencies"
   ]
 }
-
