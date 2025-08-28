@@ -1,0 +1,1141 @@
+{
+  "alignment": "../../1-data/1-aling/3-final-aling/denv3-aligned.fasta",
+  "generated_by": {
+    "program": "augur",
+    "version": "31.3.0"
+  },
+  "input_tree": "../../2-nwk_trees/denv3-cleaned.nwk",
+  "nodes": {
+    "AY496871.2|2002": {
+      "branch_length": 0.0138854
+    },
+    "AY496879.2|1997": {
+      "branch_length": 0.0206367
+    },
+    "DQ675519.1|1995": {
+      "branch_length": 0.0056157
+    },
+    "DQ675533.1|1999": {
+      "branch_length": 0.00340437
+    },
+    "EHIE21409Y22|2022": {
+      "branch_length": 0.00878581
+    },
+    "EPI_ISL_17689862|2022-08-25": {
+      "branch_length": 0.00466361
+    },
+    "EPI_ISL_17689864|2022-09-02": {
+      "branch_length": 0.00536811
+    },
+    "EU081210.1|2005": {
+      "branch_length": 0.00098704
+    },
+    "EU081214.1|2005": {
+      "branch_length": 0.0010818
+    },
+    "EU081217.1|2005": {
+      "branch_length": 0.00099076
+    },
+    "EU081225.1|2005": {
+      "branch_length": 0.00108572
+    },
+    "EU482456.1|2006": {
+      "branch_length": 0.00455412
+    },
+    "EU854292.1|2005": {
+      "branch_length": 0.00406266
+    },
+    "FJ547081.1|2001": {
+      "branch_length": 0.00197372
+    },
+    "FJ639715.1|2008": {
+      "branch_length": 0.0054178
+    },
+    "FJ639724.1|2003": {
+      "branch_length": 0.0011807
+    },
+    "FJ644564.1|2007": {
+      "branch_length": 9.443e-05
+    },
+    "FJ882573.1|1993": {
+      "branch_length": 0.00504229
+    },
+    "FJ882576.1|1994": {
+      "branch_length": 0.00448131
+    },
+    "FJ898440.1|2003": {
+      "branch_length": 0.00692025
+    },
+    "FJ898456.1|1995": {
+      "branch_length": 0.00336023
+    },
+    "FJ898457.1|2000": {
+      "branch_length": 0.00108224
+    },
+    "FJ898475.1|2008": {
+      "branch_length": 0.00029496
+    },
+    "GQ199886.1|1998": {
+      "branch_length": 0.00445166
+    },
+    "GQ466079.1|2008": {
+      "branch_length": 0.00177603
+    },
+    "GQ868578.1|2007": {
+      "branch_length": 0.00741718
+    },
+    "GU131850.1|2006": {
+      "branch_length": 0.00098387
+    },
+    "GU131861.1|2007": {
+      "branch_length": 0.00147713
+    },
+    "GU131870.1|2007": {
+      "branch_length": 0.00167792
+    },
+    "GU131872.1|2007": {
+      "branch_length": 0.00098428
+    },
+    "GU131876.1|2007": {
+      "branch_length": 0.00019662
+    },
+    "GU131903.1|2008": {
+      "branch_length": 0.00513431
+    },
+    "GU370053.1|2007-05": {
+      "branch_length": 0.00161175
+    },
+    "HM631854.1|2008": {
+      "branch_length": 0.00593247
+    },
+    "JF295012.1|2007": {
+      "branch_length": 0.00493381
+    },
+    "JF504679.1|2009-09": {
+      "branch_length": 0.00098569
+    },
+    "JQ920480.1|1996-09-04": {
+      "branch_length": 0.002645
+    },
+    "JQ920485.1|1996-10-21": {
+      "branch_length": 0.00187097
+    },
+    "JQ920486.1|1996-11-18": {
+      "branch_length": 0.0014768
+    },
+    "JQ922554.1|1963": {
+      "branch_length": 0.00593477
+    },
+    "JQ922555.1|1966": {
+      "branch_length": 0.0113525
+    },
+    "JQ922556.1|2005": {
+      "branch_length": 0.00376031
+    },
+    "JX669491.1|2002": {
+      "branch_length": 0.00029431
+    },
+    "KF041255.1|2007": {
+      "branch_length": 0.00088574
+    },
+    "KF041256.1|2006": {
+      "branch_length": 0.00216591
+    },
+    "KF041259.1|2006": {
+      "branch_length": 0.00187045
+    },
+    "KF955335.1|2009": {
+      "branch_length": 0.00680365
+    },
+    "KF955461.1|1999": {
+      "branch_length": 0.00138088
+    },
+    "KF955477.1|1984": {
+      "branch_length": 0.00483847
+    },
+    "KF955503.1|2007": {
+      "branch_length": 0.00195228
+    },
+    "KF955506.1|2007": {
+      "branch_length": 0.0049666
+    },
+    "KJ737430.1|1983": {
+      "branch_length": 0.00057737
+    },
+    "KJ830751.1|2014-01-26": {
+      "branch_length": 0.00471819
+    },
+    "KM190937.1|1964": {
+      "branch_length": 0.0066815
+    },
+    "KT424097.1|2014-08-28": {
+      "branch_length": 0.00971311
+    },
+    "KU050695.1|1956": {
+      "branch_length": 9.783e-05
+    },
+    "KU509279.1|2008": {
+      "branch_length": 0.0142075
+    },
+    "KU509280.1|2011": {
+      "branch_length": 0.00622509
+    },
+    "KU509283.1|2006": {
+      "branch_length": 0.00572039
+    },
+    "KU509286.1|2011": {
+      "branch_length": 0.0117004
+    },
+    "KX380841.1|2012": {
+      "branch_length": 0.00137746
+    },
+    "KY586702.1|2008": {
+      "branch_length": 0.00236226
+    },
+    "KY586704.1|2008": {
+      "branch_length": 0.00122211
+    },
+    "KY586706.1|2006": {
+      "branch_length": 0.00177462
+    },
+    "KY586721.1|2000": {
+      "branch_length": 0.00228676
+    },
+    "KY586724.1|2000": {
+      "branch_length": 0.00157405
+    },
+    "KY586777.1|1999": {
+      "branch_length": 0.00029501
+    },
+    "KY586818.1|2007": {
+      "branch_length": 0.0122335
+    },
+    "KY586821.1|2010": {
+      "branch_length": 0.00753625
+    },
+    "KY921906.1|2015-06": {
+      "branch_length": 0.00272154
+    },
+    "LC379197.1|2017-04-15": {
+      "branch_length": 0.00630959
+    },
+    "LT996904.1|2007": {
+      "branch_length": 0.00294236
+    },
+    "MF004386.1|2012-10-04": {
+      "branch_length": 0.0255133
+    },
+    "MF682966.1|2016-09-07": {
+      "branch_length": 0.00451528
+    },
+    "MF682970.1|2016-09-15": {
+      "branch_length": 0.00265963
+    },
+    "MF682971.1|2013-07-22": {
+      "branch_length": 0.00876213
+    },
+    "MG721064.1|2016": {
+      "branch_length": 0.00869333
+    },
+    "MH048677.1|2014-12": {
+      "branch_length": 0.00206698
+    },
+    "MH051733.1|2014-12": {
+      "branch_length": 0.00078822
+    },
+    "MH823209.1|2016": {
+      "branch_length": 0.00275681
+    },
+    "MN018370.1|2015-07-24": {
+      "branch_length": 0.0193519
+    },
+    "MN018377.1|2015-12-22": {
+      "branch_length": 0.00647023
+    },
+    "MN018379.1|2015-10-03": {
+      "branch_length": 0.0117357
+    },
+    "MN018385.1|2016-09-20": {
+      "branch_length": 0.00118245
+    },
+    "MN083246.1|2017-11": {
+      "branch_length": 0.00108404
+    },
+    "MN448959.1|2010-06-23": {
+      "branch_length": 0.00492783
+    },
+    "MN448990.1|2011-12-27": {
+      "branch_length": 0.00493778
+    },
+    "MN922035.1|2019-06-23": {
+      "branch_length": 0.00216499
+    },
+    "MT006152.1|2018-06-13": {
+      "branch_length": 0.00276579
+    },
+    "MT261972.1|2017-10-16": {
+      "branch_length": 0.00137872
+    },
+    "MT261977.1|2017-10-12": {
+      "branch_length": 0.00196623
+    },
+    "MT261978.1|2017-10-27": {
+      "branch_length": 0.00079748
+    },
+    "MW288031.1|2018-11": {
+      "branch_length": 0.00265162
+    },
+    "MW295815.1|2020-09-07": {
+      "branch_length": 0.0037471
+    },
+    "MW396463.1|2019-07-02": {
+      "branch_length": 0.00325182
+    },
+    "MW788882.1|2018-05": {
+      "branch_length": 0.00246186
+    },
+    "MW788901.1|2018-08": {
+      "branch_length": 0.00336146
+    },
+    "MW946629.1|1998": {
+      "branch_length": 0.00029501
+    },
+    "MW946651.1|1997": {
+      "branch_length": 0.00021438
+    },
+    "MW946664.1|2011": {
+      "branch_length": 0.00840521
+    },
+    "MW946691.1|1992": {
+      "branch_length": 0.00098057
+    },
+    "MW946718.1|2001": {
+      "branch_length": 0.00147648
+    },
+    "MW946753.1|2003": {
+      "branch_length": 0.00355114
+    },
+    "MW946819.1|1999": {
+      "branch_length": 0.00049182
+    },
+    "MW946820.1|2003": {
+      "branch_length": 0.00059026
+    },
+    "MW946863.1|2003": {
+      "branch_length": 0.00019665
+    },
+    "MW946876.1|2003": {
+      "branch_length": 0.0102739
+    },
+    "MW946924.1|1997": {
+      "branch_length": 0.00088574
+    },
+    "MW946926.1|1999": {
+      "branch_length": 0.00364737
+    },
+    "MW946955.1|1978": {
+      "branch_length": 0.00308955
+    },
+    "MZ008472.1|2013": {
+      "branch_length": 0.00488985
+    },
+    "MZ008474.1|2013": {
+      "branch_length": 0.00582234
+    },
+    "MZ544587.1|2019-03": {
+      "branch_length": 0.00237136
+    },
+    "MZ857226.1|1991-09-17": {
+      "branch_length": 0.00038403
+    },
+    "NODE_0000000": {
+      "branch_length": 0.001
+    },
+    "NODE_0000001": {
+      "branch_length": 0.0377337
+    },
+    "NODE_0000002": {
+      "branch_length": 0.0110555
+    },
+    "NODE_0000003": {
+      "branch_length": 0.00093829
+    },
+    "NODE_0000004": {
+      "branch_length": 2.02e-06
+    },
+    "NODE_0000005": {
+      "branch_length": 0.00020382
+    },
+    "NODE_0000006": {
+      "branch_length": 0.00321993
+    },
+    "NODE_0000007": {
+      "branch_length": 0.0114033
+    },
+    "NODE_0000008": {
+      "branch_length": 0.0088697
+    },
+    "NODE_0000009": {
+      "branch_length": 0.0107525
+    },
+    "NODE_0000010": {
+      "branch_length": 0.00697935
+    },
+    "NODE_0000011": {
+      "branch_length": 0.00402094
+    },
+    "NODE_0000012": {
+      "branch_length": 0.00320495
+    },
+    "NODE_0000013": {
+      "branch_length": 0.00267038
+    },
+    "NODE_0000014": {
+      "branch_length": 0.00693862
+    },
+    "NODE_0000015": {
+      "branch_length": 0.00018256
+    },
+    "NODE_0000016": {
+      "branch_length": 0.00493368
+    },
+    "NODE_0000017": {
+      "branch_length": 0.00171823
+    },
+    "NODE_0000018": {
+      "branch_length": 2.15e-06
+    },
+    "NODE_0000019": {
+      "branch_length": 0.00151727
+    },
+    "NODE_0000020": {
+      "branch_length": 0.00378485
+    },
+    "NODE_0000021": {
+      "branch_length": 0.00283705
+    },
+    "NODE_0000022": {
+      "branch_length": 0.00498851
+    },
+    "NODE_0000023": {
+      "branch_length": 0.0100442
+    },
+    "NODE_0000024": {
+      "branch_length": 0.00344246
+    },
+    "NODE_0000025": {
+      "branch_length": 0.00456836
+    },
+    "NODE_0000026": {
+      "branch_length": 0.00093154
+    },
+    "NODE_0000027": {
+      "branch_length": 0.00747538
+    },
+    "NODE_0000028": {
+      "branch_length": 0.00069651
+    },
+    "NODE_0000029": {
+      "branch_length": 0.0103732
+    },
+    "NODE_0000030": {
+      "branch_length": 0.00010571
+    },
+    "NODE_0000031": {
+      "branch_length": 0.00135349
+    },
+    "NODE_0000032": {
+      "branch_length": 0.00929292
+    },
+    "NODE_0000033": {
+      "branch_length": 0.00678823
+    },
+    "NODE_0000034": {
+      "branch_length": 0.00156308
+    },
+    "NODE_0000035": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000036": {
+      "branch_length": 0.00059005
+    },
+    "NODE_0000037": {
+      "branch_length": 0.00304719
+    },
+    "NODE_0000038": {
+      "branch_length": 0.00345337
+    },
+    "NODE_0000039": {
+      "branch_length": 0.00073001
+    },
+    "NODE_0000040": {
+      "branch_length": 0.00049503
+    },
+    "NODE_0000041": {
+      "branch_length": 0.00266675
+    },
+    "NODE_0000042": {
+      "branch_length": 0.00078059
+    },
+    "NODE_0000043": {
+      "branch_length": 0.00029701
+    },
+    "NODE_0000044": {
+      "branch_length": 3.52e-06
+    },
+    "NODE_0000045": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000046": {
+      "branch_length": 0.00116237
+    },
+    "NODE_0000047": {
+      "branch_length": 0.00148356
+    },
+    "NODE_0000048": {
+      "branch_length": 0.00039818
+    },
+    "NODE_0000049": {
+      "branch_length": 0.0039565
+    },
+    "NODE_0000050": {
+      "branch_length": 0.00048783
+    },
+    "NODE_0000051": {
+      "branch_length": 0.00079054
+    },
+    "NODE_0000052": {
+      "branch_length": 2.42e-06
+    },
+    "NODE_0000053": {
+      "branch_length": 0.0005936
+    },
+    "NODE_0000054": {
+      "branch_length": 0.00444487
+    },
+    "NODE_0000055": {
+      "branch_length": 0.0101366
+    },
+    "NODE_0000056": {
+      "branch_length": 0.0103295
+    },
+    "NODE_0000057": {
+      "branch_length": 0.00482399
+    },
+    "NODE_0000058": {
+      "branch_length": 0.00769199
+    },
+    "NODE_0000059": {
+      "branch_length": 0.00102888
+    },
+    "NODE_0000060": {
+      "branch_length": 0.00015953
+    },
+    "NODE_0000061": {
+      "branch_length": 0.00267004
+    },
+    "NODE_0000062": {
+      "branch_length": 0.00373203
+    },
+    "NODE_0000063": {
+      "branch_length": 0.00472492
+    },
+    "NODE_0000064": {
+      "branch_length": 0.00446373
+    },
+    "NODE_0000065": {
+      "branch_length": 0.0059719
+    },
+    "NODE_0000066": {
+      "branch_length": 0.00118314
+    },
+    "NODE_0000067": {
+      "branch_length": 0.00247387
+    },
+    "NODE_0000068": {
+      "branch_length": 0.00334769
+    },
+    "NODE_0000069": {
+      "branch_length": 0.00255801
+    },
+    "NODE_0000070": {
+      "branch_length": 0.00010509
+    },
+    "NODE_0000071": {
+      "branch_length": 0.00552341
+    },
+    "NODE_0000072": {
+      "branch_length": 0.00059013
+    },
+    "NODE_0000073": {
+      "branch_length": 0.00137977
+    },
+    "NODE_0000074": {
+      "branch_length": 0.00051427
+    },
+    "NODE_0000075": {
+      "branch_length": 0.00059066
+    },
+    "NODE_0000076": {
+      "branch_length": 0.00331612
+    },
+    "NODE_0000077": {
+      "branch_length": 0.00059026
+    },
+    "NODE_0000078": {
+      "branch_length": 0.00126071
+    },
+    "NODE_0000079": {
+      "branch_length": 9.831e-05
+    },
+    "NODE_0000080": {
+      "branch_length": 0.00305364
+    },
+    "NODE_0000081": {
+      "branch_length": 0.00041583
+    },
+    "NODE_0000082": {
+      "branch_length": 0.00404296
+    },
+    "NODE_0000083": {
+      "branch_length": 0.00206999
+    },
+    "NODE_0000084": {
+      "branch_length": 0.00187598
+    },
+    "NODE_0000085": {
+      "branch_length": 0.00137872
+    },
+    "NODE_0000086": {
+      "branch_length": 0.00102257
+    },
+    "NODE_0000087": {
+      "branch_length": 0.0021469
+    },
+    "NODE_0000088": {
+      "branch_length": 0.00416711
+    },
+    "NODE_0000089": {
+      "branch_length": 0.0015632
+    },
+    "NODE_0000090": {
+      "branch_length": 0.00050086
+    },
+    "NODE_0000091": {
+      "branch_length": 0.00068959
+    },
+    "NODE_0000092": {
+      "branch_length": 0.00548723
+    },
+    "NODE_0000093": {
+      "branch_length": 0.00108113
+    },
+    "NODE_0000094": {
+      "branch_length": 0.00197372
+    },
+    "NODE_0000095": {
+      "branch_length": 0.00078974
+    },
+    "NODE_0000096": {
+      "branch_length": 0.00019765
+    },
+    "NODE_0000097": {
+      "branch_length": 0.00058867
+    },
+    "NODE_0000098": {
+      "branch_length": 0.00098679
+    },
+    "NODE_0000099": {
+      "branch_length": 0.0135113
+    },
+    "NODE_0000100": {
+      "branch_length": 0.0022404
+    },
+    "NODE_0000101": {
+      "branch_length": 0.0135052
+    },
+    "NODE_0000102": {
+      "branch_length": 0.00701287
+    },
+    "NODE_0000103": {
+      "branch_length": 0.00485019
+    },
+    "NODE_0000104": {
+      "branch_length": 0.00386685
+    },
+    "NODE_0000105": {
+      "branch_length": 0.00251457
+    },
+    "NODE_0000106": {
+      "branch_length": 0.0022698
+    },
+    "NODE_0000107": {
+      "branch_length": 0.00048304
+    },
+    "NODE_0000108": {
+      "branch_length": 0.00250247
+    },
+    "NODE_0000109": {
+      "branch_length": 0.00144924
+    },
+    "NODE_0000110": {
+      "branch_length": 0.00258925
+    },
+    "NODE_0000111": {
+      "branch_length": 0.00170109
+    },
+    "NODE_0000112": {
+      "branch_length": 0.00088538
+    },
+    "NODE_0000113": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000114": {
+      "branch_length": 0.00019563
+    },
+    "NODE_0000115": {
+      "branch_length": 0.002695
+    },
+    "NODE_0000116": {
+      "branch_length": 0.00790346
+    },
+    "NODE_0000117": {
+      "branch_length": 0.00075796
+    },
+    "NODE_0000118": {
+      "branch_length": 9.382e-05
+    },
+    "NODE_0000119": {
+      "branch_length": 0.00277263
+    },
+    "NODE_0000120": {
+      "branch_length": 0.00048937
+    },
+    "NODE_0000121": {
+      "branch_length": 0.00168232
+    },
+    "NODE_0000122": {
+      "branch_length": 0.00572696
+    },
+    "NODE_0000123": {
+      "branch_length": 0.00879327
+    },
+    "NODE_0000124": {
+      "branch_length": 2.15e-06
+    },
+    "NODE_0000125": {
+      "branch_length": 0.0021681
+    },
+    "NODE_0000126": {
+      "branch_length": 0.00103195
+    },
+    "NODE_0000127": {
+      "branch_length": 0.00271203
+    },
+    "NODE_0000128": {
+      "branch_length": 0.00236867
+    },
+    "NODE_0000129": {
+      "branch_length": 9.382e-05
+    },
+    "NODE_0000130": {
+      "branch_length": 2.52e-06
+    },
+    "NODE_0000131": {
+      "branch_length": 0.00049282
+    },
+    "NODE_0000132": {
+      "branch_length": 0.00187284
+    },
+    "NODE_0000133": {
+      "branch_length": 0.00158022
+    },
+    "NODE_0000134": {
+      "branch_length": 0.00019665
+    },
+    "NODE_0000135": {
+      "branch_length": 9.977e-05
+    },
+    "NODE_0000136": {
+      "branch_length": 0.00097782
+    },
+    "NODE_0000137": {
+      "branch_length": 0.00395796
+    },
+    "NODE_0000138": {
+      "branch_length": 0.0101763
+    },
+    "NODE_0000139": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000140": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000141": {
+      "branch_length": 0.00059026
+    },
+    "NODE_0000142": {
+      "branch_length": 0.013882
+    },
+    "NODE_0000143": {
+      "branch_length": 0.0037806
+    },
+    "NODE_0000144": {
+      "branch_length": 0.00058638
+    },
+    "NODE_0000145": {
+      "branch_length": 0.00298614
+    },
+    "NODE_0000146": {
+      "branch_length": 0.00018868
+    },
+    "NODE_0000147": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000148": {
+      "branch_length": 0.00356204
+    },
+    "NODE_0000149": {
+      "branch_length": 0.00383806
+    },
+    "NODE_0000150": {
+      "branch_length": 9.166e-05
+    },
+    "NODE_0000151": {
+      "branch_length": 0.00245103
+    },
+    "NODE_0000152": {
+      "branch_length": 0.00029501
+    },
+    "NODE_0000153": {
+      "branch_length": 2.52e-06
+    },
+    "NODE_0000154": {
+      "branch_length": 0.0114802
+    },
+    "NODE_0000155": {
+      "branch_length": 0.00130816
+    },
+    "NODE_0000156": {
+      "branch_length": 0.00019657
+    },
+    "NODE_0000157": {
+      "branch_length": 0.00165347
+    },
+    "NODE_0000158": {
+      "branch_length": 0.00367915
+    },
+    "NODE_0000159": {
+      "branch_length": 9.706e-05
+    },
+    "NODE_0000160": {
+      "branch_length": 0.0030981
+    },
+    "NODE_0000161": {
+      "branch_length": 0.00977843
+    },
+    "NODE_0000162": {
+      "branch_length": 0.0006917
+    },
+    "NODE_0000163": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000164": {
+      "branch_length": 2.73e-06
+    },
+    "NODE_0000165": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000166": {
+      "branch_length": 0.00289515
+    },
+    "NODE_0000167": {
+      "branch_length": 0.00312519
+    },
+    "NODE_0000168": {
+      "branch_length": 0.00141722
+    },
+    "NODE_0000169": {
+      "branch_length": 0.00040355
+    },
+    "NODE_0000170": {
+      "branch_length": 0.00206453
+    },
+    "NODE_0000171": {
+      "branch_length": 0.00603695
+    },
+    "NODE_0000172": {
+      "branch_length": 0.00069755
+    },
+    "NODE_0000173": {
+      "branch_length": 0.0001531
+    },
+    "NODE_0000174": {
+      "branch_length": 0.00042375
+    },
+    "NODE_0000175": {
+      "branch_length": 0.00347691
+    },
+    "NODE_0000176": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000177": {
+      "branch_length": 0.00539337
+    },
+    "NODE_0000178": {
+      "branch_length": 0.0011906
+    },
+    "NODE_0000179": {
+      "branch_length": 0.00217096
+    },
+    "NODE_0000180": {
+      "branch_length": 0.00457479
+    },
+    "NODE_0000181": {
+      "branch_length": 0.00156053
+    },
+    "NODE_0000182": {
+      "branch_length": 0.00019525
+    },
+    "NODE_0000183": {
+      "branch_length": 0.0020891
+    },
+    "NODE_0000184": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000185": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000186": {
+      "branch_length": 1e-06
+    },
+    "NODE_0000187": {
+      "branch_length": 0.00020159
+    },
+    "OK469354.1|1989": {
+      "branch_length": 0.00544265
+    },
+    "OK469355.1|1973": {
+      "branch_length": 0.00049472
+    },
+    "OK469356.1|1976": {
+      "branch_length": 9.527e-05
+    },
+    "OK605762.1|2007": {
+      "branch_length": 0.00912327
+    },
+    "OM258630.1|1953": {
+      "branch_length": 0.0386225
+    },
+    "ON116130.1|2021-08": {
+      "branch_length": 0.00236451
+    },
+    "ON123669.1|2018": {
+      "branch_length": 0.00175509
+    },
+    "ON908245.1|2019-06-01": {
+      "branch_length": 0.00457879
+    },
+    "OP410993.1|2008-09": {
+      "branch_length": 0.00584358
+    },
+    "OP410995.1|2014-10": {
+      "branch_length": 0.00720245
+    },
+    "OP895705.1|2018": {
+      "branch_length": 0.0117879
+    },
+    "OQ603310.1|2015": {
+      "branch_length": 0.0128222
+    },
+    "OQ603311.1|2015": {
+      "branch_length": 0.0080338
+    },
+    "OQ714406.1|2022-09": {
+      "branch_length": 0.00768646
+    },
+    "OQ821614.1|2022-08-11": {
+      "branch_length": 0.00029433
+    },
+    "OR053670.1|2019-09": {
+      "branch_length": 0.00984042
+    },
+    "OR229983.1|2020-09": {
+      "branch_length": 0.00236675
+    },
+    "OR236120.1|2013-06": {
+      "branch_length": 0.00713065
+    },
+    "OR236121.1|2016-02": {
+      "branch_length": 0.00553645
+    },
+    "OR389037.1|2008": {
+      "branch_length": 0.00912408
+    },
+    "OR389038.1|2004": {
+      "branch_length": 0.00068873
+    },
+    "OR389336.1|1966": {
+      "branch_length": 0.00220602
+    },
+    "OR389338.1|1984": {
+      "branch_length": 0.00251153
+    },
+    "OR393973.1|2019-07-04": {
+      "branch_length": 0.00315818
+    },
+    "OR393978.1|2019-08-05": {
+      "branch_length": 0.00454313
+    },
+    "OR394032.1|2019-11-29": {
+      "branch_length": 0.00752768
+    },
+    "OR477108.1|2015-03-11": {
+      "branch_length": 0.00128442
+    },
+    "OR477147.1|2018-07-06": {
+      "branch_length": 0.00918606
+    },
+    "OR477148.1|2018-08-05": {
+      "branch_length": 0.00305238
+    },
+    "OR477156.1|2018-10-01": {
+      "branch_length": 0.00867351
+    },
+    "OR477167.1|2019-07-18": {
+      "branch_length": 0.0131303
+    },
+    "OR477172.1|2019-07-22": {
+      "branch_length": 0.00689739
+    },
+    "OR477173.1|2019-07-26": {
+      "branch_length": 0.0037471
+    },
+    "OR616499.1|2023-08-21": {
+      "branch_length": 0.00330888
+    },
+    "OR618322.1|2016-12-04": {
+      "branch_length": 0.00277289
+    },
+    "OR821935.1|2023-08-28": {
+      "branch_length": 0.00181169
+    },
+    "PP234923.1|2019-07-01": {
+      "branch_length": 0.00988934
+    },
+    "PP269947.1|2012-01-30": {
+      "branch_length": 0.00095094
+    },
+    "PP269950.1|2012-01-05": {
+      "branch_length": 0.00557952
+    },
+    "PP269951.1|2012-09-17": {
+      "branch_length": 0.00559081
+    },
+    "PP269973.1|2012-09-13": {
+      "branch_length": 0.00249224
+    },
+    "PP269977.1|2015-08-24": {
+      "branch_length": 0.00667428
+    },
+    "PP563871.1|2023-07-04": {
+      "branch_length": 0.0117557
+    },
+    "PP766873.1|2023-06-05": {
+      "branch_length": 0.00594178
+    },
+    "PP815633.1|2008-04-22": {
+      "branch_length": 0.00059345
+    },
+    "PP968117.1|2024-03-13": {
+      "branch_length": 0.00226772
+    },
+    "PP983031.1|2024-03-04": {
+      "branch_length": 0.00428101
+    },
+    "PP994656.1|2022-04-15": {
+      "branch_length": 0.00820574
+    },
+    "PP994658.1|2022-06-20": {
+      "branch_length": 0.00821164
+    },
+    "PP994667.1|2022-10-17": {
+      "branch_length": 0.0235477
+    },
+    "PQ084661.1|2023-10-10": {
+      "branch_length": 0.00039297
+    },
+    "PQ119856.1|2024-05": {
+      "branch_length": 0.023081
+    },
+    "PQ218499.1|2019-05-14": {
+      "branch_length": 0.00340202
+    },
+    "PQ218500.1|2019-05-15": {
+      "branch_length": 0.00264489
+    },
+    "PQ340820.1|2024-07-17": {
+      "branch_length": 0.00364825
+    },
+    "PQ617128.1|2024-08-13": {
+      "branch_length": 0.00314969
+    },
+    "PQ780163.1|2024-08-29": {
+      "branch_length": 0.00504666
+    },
+    "PQ780164.1|2024-09-03": {
+      "branch_length": 0.00484199
+    },
+    "PQ851501.1|2024-06-13": {
+      "branch_length": 0.00474056
+    },
+    "PQ868291.1|2024-11-08": {
+      "branch_length": 0.0043441
+    },
+    "PQ882223.1|2024-01-25": {
+      "branch_length": 0.00368507
+    },
+    "PV088277.1|2014-02-09": {
+      "branch_length": 0.0101388
+    },
+    "PV291830.1|2024-03": {
+      "branch_length": 0.0108958
+    },
+    "PV342627.1|2024-08-06": {
+      "branch_length": 0.00035746
+    },
+    "PV344214.1|2024-07-27": {
+      "branch_length": 0.0124593
+    },
+    "PV344222.1|2024-07-02": {
+      "branch_length": 0.0109261
+    },
+    "PV474413.1|2023-10-05": {
+      "branch_length": 0.0003934
+    },
+    "PV474414.1|2023-10-13": {
+      "branch_length": 0.00098289
+    },
+    "PV474415.1|2023-10-14": {
+      "branch_length": 0.00639796
+    },
+    "PV474416.1|2023-10-19": {
+      "branch_length": 0.0003934
+    },
+    "PV474417.1|2023-10-20": {
+      "branch_length": 0.00127896
+    },
+    "PV474420.1|2023-10-25": {
+      "branch_length": 0.00167933
+    },
+    "PV685005.1|2020": {
+      "branch_length": 0.00103657
+    },
+    "PV855845.1|2009-08-16": {
+      "branch_length": 0.0111979
+    },
+    "PV855850.1|2008-03-24": {
+      "branch_length": 0.00193326
+    }
+  }
+}

@@ -1,32 +1,7 @@
-# Dengue Lineages Dataset Workflow
+# Datasets Workflow
 
-This repository contains the source code and datasets used to implement the Dengue lineages system in NextClade. The workflow is based on the organizational structure initially developed for the Mpox virus, available [here](https://github.com/nextstrain/mpox/tree/master/nextclade).
+This repository contains the source code and datasets used to implement datasets in NextClade. The workflow is based on the organizational structure initially developed for the Mpox virus, available at https://github.com/nextstrain/mpox/tree/master/nextclade
 
-## Overview
-
-This repository contains the workflow for generating datasets from the representative trees produced in the Dengue Virus Lineage Systems project, as described by [Hill V, Cleemput S, Pereira JS, et al. (2024)](https://doi.org/10.1371/journal.pbio.3002834). These datasets are designed for integration into the NextClade tool, facilitating the implementation and analysis of dengue virus lineages.
-
-## Repository Contents
-
-- **datasets/**: Contains the curated dengue virus sequence datasets.
-- **scripts/**: Includes the scripts used for data processing and analysis.
-- **config/**: Maps various dengue virus variants to the correct genomic annotation file
-- **resources/**: Files necessary for constructing and configuring the datasets
-
-## How to Use
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/V-GEN-Lab/dengue-lineages-workflow.git
-   ```
-2. **Setup Environment**:
-   Follow the instructions in the `docs/setup.md` to install dependencies and configure your environment.
-
-3. **Run the Workflow**:
-   Execute the main workflow using Snakemake:
-   ```bash
-   snakemake --cores <number_of_cores>
-   ```
 
 ## Maintainers and Contacts
 
