@@ -1,6 +1,6 @@
 # ChikV Genotypes Dataset Workflow
 
-This repository contains the source code and datasets used to implement the Chikungunya virus (ChikV) genotypes system in NextClade. The workflow is based on the organizational structure initially developed for the Mpox virus, available [here](https://github.com/nextstrain/mpox/tree/master/nextclade).
+This repository contains the source code and datasets used to implement the Chikungunya virus (ChikV) genotypes system in NextClade. The workflow is based on the organizational structure initially developed for the Measles, available [here](https://github.com/nextstrain/measles/tree/fe1d086f78711b2b9ea8d38bd4b45e1984a41760/nextclade_genome/defaults/genome_dataset).
 
 ## Overview
 
