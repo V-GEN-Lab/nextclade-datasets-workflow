@@ -12,9 +12,9 @@
 
 The dataset aims to enable rapid and accurate identification of the three main chikV genotypes, improving the resolution and speed of phylogenetic classification in routine surveillance networks.
 
-The source code is available at [V-GEN-Lab/nexclade-datasets-workflow](https://github.com/V-GEN-Lab/nexclade-datasets-workflow).
+The source code is available at [V-GEN-Lab/nexclade-datasets-workflow/chikV](https://github.com/V-GEN-Lab/nextclade-datasets-workflow/tree/main/chikV).
 
-For bugs, please open an [issue](https://github.com/V-GEN-Lab/nexclade-datasets-workflow/issues)
+For bugs, please open an [issue](https://github.com/V-GEN-Lab/nextclade-datasets-workflow/issues)
 
 ## Maintainers and Contacts:
 

@@ -1,2 +1,37 @@
-chikV:
-  annotation: "resources/chikV/genome_annotation.gff3"
+ #config.yaml
+
+input_file:
+    tsv: "resources/raw/metadata.tsv"
+    fasta: "resources/raw/sequence.fasta"
+
+output_dirs:
+    - "results"
+    - "results/tree"
+    - "results/augur"
+
+files:
+    dataset_files: "resources/chikV"
+    reference: "resources/reference.gb"
+    clades: "resources/clades.tsv"
+    auspice_config: "resources/auspice_config.json"
+    colors_ordering: "resources/color_ordering.tsv"
+    color_schemes: "resources/color_schemes.tsv"
+
+resources:
+  default:
+    mem_mb: 60000
+    threads: 20
+  minimal:
+    mem_mb: 10000
+    threads: 1
+  align:
+    mem_mb: 100000
+    threads: 60
+
+filter:
+    group_by: "country genotype month"
+    sequences_per_group: "1"
+
+strain_id_field: "accession"
+
+genes: ['6K', 'C', 'E1', 'E2', 'E3', 'nsP1', 'nsP2', 'nsP3', 'nsP4']

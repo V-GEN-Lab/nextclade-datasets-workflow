@@ -1,0 +1,68 @@
+{
+  "title": "Chikungunya Virus Genotypes",
+  "maintainers": [
+    {
+      "name": "James Siqueira",
+      "url": ""
+    },
+    {
+      "name": "Alex Ranieri",
+      "url": ""
+    }
+  ],
+  "data_provenance": [
+    {
+      "name": "NCBI Virus",
+      "url": "https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/"
+    }
+  ],
+  "build_url": "https://github.com/V-GEN-Lab",
+  "colorings": [
+    {
+      "key": "clade_membership",
+      "title": "Clades",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "division",
+      "title": "Division",
+      "type": "categorical"
+    },
+    {
+      "key": "location",
+      "title": "Location",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "region",
+    "country",
+    "division",
+    "location"
+  ],
+  "display_defaults": {
+    "map_triplicate": true,
+    "color_by": "clade_membership"
+  },
+  "filters": [
+    "genotype",
+    "country",
+    "division"
+  ],
+  "panels": [
+    "tree",
+    "map",
+    "entropy",
+    "frequencies"
+  ]
+}

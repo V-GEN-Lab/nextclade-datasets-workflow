@@ -31,8 +31,8 @@
     "treeJson": "tree.json"
   },
   "meta": {
-    "bugs": "https://github.com/V-GEN-Lab/",
-    "source code": "https://github.com/V-GEN-Lab/"
+    "bugs": "https://github.com/V-GEN-Lab/nextclade-datasets-workflow/issues",
+    "source code": "https://github.com/V-GEN-Lab/nextclade-datasets-workflow/tree/main/chikV"
   },
   "qc": {
     "frameShifts": {
@@ -41,7 +41,7 @@
     "missingData": {
       "enabled": true,
       "missingDataThreshold": 1000,
-      "scoreBias": 100
+      "scoreBias": 500
     },
     "mixedSites": {
       "enabled": false,

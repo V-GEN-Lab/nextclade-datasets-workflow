@@ -13,20 +13,6 @@ This repository contains the workflow for generating datasets from the represent
 - **config/**: Maps various ChikV genotypes to the correct genomic annotation file.
 - **resources/**: Files necessary for constructing and configuring the datasets.
 
-## How to Use
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/V-GEN-Lab/dengue-lineages-workflow.git
-   ```
-2. **Setup Environment**:
-   Follow the instructions in the `docs/setup.md` to install dependencies and configure your environment.
-
-3. **Run the Workflow**:
-   Execute the main workflow using Snakemake:
-   ```bash
-   snakemake --cores <number_of_cores>
-   ```
 
 ## Maintainers and Contacts
 
